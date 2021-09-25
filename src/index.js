@@ -27,7 +27,7 @@ function checksCreateTodosUserAvailability(request, response, next) {
   const { user } = request;
 
   if (user.pro === false && user.todos.length >= 10)
-    return response.status(403).json({ error: "Não é possível criar todo" });
+    return response.status(403).json({ error: "Unable to create todo because is not Pro and already have ten todo" });
 
   next();
 }
