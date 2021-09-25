@@ -23,7 +23,6 @@ function checksExistsUserAccount(request, response, next) {
   next();
 }
 
-//todo: verificar esse
 function checksCreateTodosUserAvailability(request, response, next) {
   const { user } = request;
 
